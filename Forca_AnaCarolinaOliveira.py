@@ -86,7 +86,7 @@ print(f"\nVocê tem {chances} tentativas!")
 
 
 # Tentativas 
-while tentativas < chances and palavra_secreta != palavra :
+while tentativas < chances and "".join(palavra_secreta) != palavra:
     letra = input("\nInsira uma letra: ").upper()
 
     if len(letra) != 1 or not letra.isalpha():
